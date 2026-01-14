@@ -2,9 +2,38 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Fresh Market</title>
+    <link rel="stylesheet" href="../style/overview_style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 </head>
 <body>
-
+<div class="product-card">
+    <div class="product-image">
+        <span class="product-emoji">{IMAGE}</span>
+        <div class="product-overlay">
+            <a href="/product?id={ID}" class="view-detail-btn">View Details</a>
+        </div>
+        <div class="organic-badge-card">Organic</div>
+    </div>
+    <div class="product-info">
+        <h3 class="product-name">{PRODUCT_NAME}</h3>
+        <div class="product-meta">
+            <span class="product-origin">🌍 {FROM}</span>
+            <span class="product-nutrients">❤️ {NUTRIENTS}</span>
+        </div>
+        <div class="product-price-row">
+            <div class="price-box">
+                <span class="currency">$</span>
+                <span class="price-value">{PRICE}</span>
+            </div>
+            <span class="quantity">/ {QUANTITY}</span>
+        </div>
+        <button class="add-to-cart-btn">
+            <span>Add to Cart</span>
+            <span>🛒</span>
+        </button>
+    </div>
+</div>
 </body>
 </html>
