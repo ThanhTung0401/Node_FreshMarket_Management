@@ -50,6 +50,8 @@
             justify-content: center;
             font-size: 24px;
             line-height: 1;
+            text-decoration: none;
+            color: inherit;
         }
 
         .back-btn:hover, .favorite-btn:hover {
@@ -263,9 +265,9 @@
 <div class="detail-section">
     <!--detail header -->
     <div class="detail-header">
-        <button class="back-btn">
+        <a href="/" class="back-btn">
             <span>&larr;</span>
-        </button>
+        </a>
         <h2 id="">Product's detail information </h2>
         <button class ="favorite-btn">
             <span>&hearts;</span>
@@ -275,7 +277,7 @@
     <div class="detail-layout">
         <!--left column-->
         <div class="detail-image">
-            <div class="organic-badge">
+            <div class="organic-badge" style="display: {ORGANIC_DISPLAY}">
                 <div class="organic-icon">
                     <span>🌱</span>
                 </div>

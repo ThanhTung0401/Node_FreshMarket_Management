@@ -1,20 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Fresh Market</title>
-    <link rel="stylesheet" href="../style/overview_style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-</head>
-<body>
 <div class="product-card">
     <div class="product-image">
         <span class="product-emoji">{IMAGE}</span>
         <div class="product-overlay">
             <a href="/product?id={ID}" class="view-detail-btn">View Details</a>
         </div>
-        <div class="organic-badge-card">Organic</div>
+        <div class="organic-badge-card" style="display: {ORGANIC_DISPLAY}">Organic</div>
     </div>
     <div class="product-info">
         <h3 class="product-name">{PRODUCT_NAME}</h3>
@@ -35,5 +25,3 @@
         </button>
     </div>
 </div>
-</body>
-</html>
